@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GitHub Intro - BCSF18M055</title>
+</head>
+<body>
+    <div class="page">
+        <h1 class="underlined text-center space">Git and Github Tutorial</h1>
+        <p>This article will get you familiarize with one of the most popular <i>Version Control System (VCS)</i> <b>Git.</b><br/>
+        Following are the main steps that you have to always follow.
+        </p>
+        <div class="space"></div>
+        <ol>
+            <li>
+                Open the directory in terminal and Initialize the empty git repository.<br/>
+                <div class="code">
+                    git init
+                </div>
+                <br/>
+                It will create a <i>.git</i> directory in the current directory.
+            </li>
+            <li>
+                Now one of the useful command here is 
+                <div class="code">
+                    git status
+                </div>. It will tell you about what files are modified, added or deleted.
+                <img src="/images/gitstatus.jpg" width="60%" class="center">
+            </li>
+            <br>
+                Now it is time to add the files to staging area (Tracking changes). for that we'll use the command : <br/>
+                <div class="code">
+                    git add (filename)
+                </div> for specific file or 
+                <div class="code">
+                    git add .
+                </div>
+                for adding all files
+                <img src="/images/gitadd.png" width="60%" class="center">
+            </li>
+        </ol>
+    </div>
+</body>
+<script>
+    // copy to clipboard
+    document.querySelectorAll(".code").forEach(e=>{
+        e.addEventListener("click",(e)=>{
+            copyText = e.target.innerText;
+            navigator.clipboard.writeText(copyText);
+        });
+    })
+</script>
+</html>
