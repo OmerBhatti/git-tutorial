@@ -37,12 +37,12 @@ i{
     opacity: 0.65;
 }
 .code{
-    margin:10px 0px;
-    background-color: rgba(255, 255, 255, 0.75);
-    color:#000000;
+    background-color: rgba(255, 255, 255, 0.25);
+    color:white;
+    margin:5px 0px;
     display: inline-block;
     font-weight: 700;
-    padding:5px 10px;
+    padding:2px 5px;
     border-radius: 5px;
     font-family: 'Courier New', Courier, monospace;
     -webkit-border-radius: 5px;
@@ -57,8 +57,8 @@ i{
 }
 
 .code:hover{
-    background-color: rgba(255, 255, 255, 0.25);
-    color:white;
+    background-color: rgba(255, 255, 255, 0.75);
+    color:#000000;
     transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;

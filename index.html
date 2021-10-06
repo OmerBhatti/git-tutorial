@@ -10,11 +10,12 @@
 <body>
     <div class="page">
         <h1 class="underlined text-center space">Git and Github Tutorial</h1>
-        <p>This article will get you familiarize with one of the most popular <i>Version Control System (VCS)</i> <b>Git.</b><br/>
-        Following are the main steps that you have to always follow.
+        <p>This article will get you familiarize with one of the most popular <i>Version Control System (VCS)</i> <b>Git.</b> <a href="https://git-scm.com/downloads">Download</a></a>
         </p>
         <div class="space"></div>
         <ol>
+            Following are the main steps that you have to always follow.
+            <div class="space"></div>
             <li>
                 Open the directory in terminal and Initialize the empty git repository.<br/>
                 <div class="code">
@@ -30,7 +31,7 @@
                 </div>. It will tell you about what files are modified, added or deleted.
                 <img src="/images/gitstatus.jpg" width="60%" class="center">
             </li>
-            <br>
+            <li>
                 Now it is time to add the files to staging area (Tracking changes). for that we'll use the command : <br/>
                 <div class="code">
                     git add (filename)
@@ -40,6 +41,32 @@
                 </div>
                 for adding all files
                 <img src="/images/gitadd.png" width="60%" class="center">
+            </li>
+            <li>
+                Once the files are in staging area you can save them to commit history via command 
+                <div class="code">
+                    git commit -m "My First Commit"
+                </div>
+                and you can check all your commit from the command 
+                <div class="code">
+                    git log
+                </div> or 
+                <div class="code">
+                    git log --oneline
+                </div>
+                <img src="/images/gitcommit.png" width="60%" class="center">
+            </li>
+            <li>
+                Now our commit is saved we can add multiple commits in this repository.
+            </li>
+            <li>
+                Let's upload these changes to GitHub.<br/>
+                for that we have to link our local repository to github repository. 
+                <div class="code">
+                    git remote add origin URL
+                </div>
+                in my case URL is <i>"https://github.com/OmerBhatti/git-tutorial.git"</i>
+
             </li>
         </ol>
     </div>
