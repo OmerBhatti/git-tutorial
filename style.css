@@ -72,3 +72,16 @@ i{
     margin: 0px auto;
     display: block;
 }
+
+@media (min-width:200px) and (max-width:768px) {
+    .page{
+        padding: 20px 30px;
+    }
+    img{
+        width:100%;
+    }
+    p{
+        font-size: 14px!important;
+    }
+    
+}
