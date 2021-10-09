@@ -99,11 +99,13 @@
             </li>
             <h3 class="underlined">Branching</h3>
             <li>
-                One of the main use of git is for testing new features without Disrupting the stable version for that we create seperate branch
+                One of the main use of git is for testing new features without Disrupting the stable version for that we create new branch
                 with the command 
                 <div class="code">
-                    git checkout -b new-branch-name
+                    git checkout -b new-feature
                 </div>
+                <img src="images/newbranch.jpg" width="60%" class="center">  
+                <img src="images/branches.jpg" width="60%" class="center">  
                 this command will create new branch and move the HEAD to this branch.
                 Every branch created is the copy of the branch it was created from.
             </li>
@@ -113,8 +115,17 @@
                 to merge new branch in your main branch:
                 <br/>
                 First switch to main branch by <div class="code">
-                    git checkout main
+                    git checkout master
                 </div>
+                <img src="images/gitMerge.jpg" width="60%" class="center">                
+            </li>
+            <li>
+                Now i have merged the branch <b>new-feature</b> into my <b>master</b> branch i can delete it using this command
+                <br/>
+                First switch to main branch by <div class="code">
+                    git branch -d new-feature
+                </div>
+                <img src="images/deletebranch.png" width="60%" class="center">                
             </li>
         </ol>
     </div>
