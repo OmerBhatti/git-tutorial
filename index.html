@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,38 @@
     <link rel="stylesheet" href="style.css">
     <title>GitHub Intro - BCSF18M055</title>
 </head>
+
 <body>
     <div class="page">
         <h1 class="underlined text-center space">Git and Github Tutorial</h1>
-        <p>This article will get you familiarize with one of the most popular <i>Version Control System (VCS)</i> <b>Git.</b> <a href="https://git-scm.com/downloads">Download</a></a>
+        <p>This article will get you familiarize with one of the most popular <i>Version Control System (VCS)</i>
+            <b>Git.</b> <a href="https://git-scm.com/downloads">Download</a></a>
         </p>
         <div class="space"></div>
         <ol>
             Following are the main steps that you have to always follow.
             <div class="space"></div>
             <li>
-                Open the directory in terminal and Initialize the empty git repository.<br/>
+                Open the directory in terminal and Initialize the empty git repository.<br />
                 <div class="code">
                     git init
                 </div>
-                <br/>
+                <br />
                 It will create a <i>.git</i> directory in the current directory.
             </li>
             <li>
-                Now one of the useful command here is 
+                Now one of the useful command here is
                 <div class="code">
                     git status
                 </div>. It will tell you about what files are modified, added or deleted.
                 <img src="/images/gitstatus.jpg" width="60%" class="center">
             </li>
             <li>
-                Now it is time to add the files to staging area (Tracking changes). for that we'll use the command : <br/>
+                Now it is time to add the files to staging area (Tracking changes). for that we'll use the command :
+                <br />
                 <div class="code">
                     git add (filename)
-                </div> for specific file or 
+                </div> for specific file or
                 <div class="code">
                     git add .
                 </div>
@@ -43,14 +47,14 @@
                 <img src="/images/gitadd.png" width="60%" class="center">
             </li>
             <li>
-                Once the files are in staging area you can save them to commit history via command 
+                Once the files are in staging area you can save them to commit history via command
                 <div class="code">
                     git commit -m "My First Commit"
                 </div>
-                and you can check all your commit from the command 
+                and you can check all your commit from the command
                 <div class="code">
                     git log
-                </div> or 
+                </div> or
                 <div class="code">
                     git log --oneline
                 </div>
@@ -60,8 +64,8 @@
                 Now our commit is saved we can add multiple commits in this repository.
             </li>
             <li>
-                Let's upload these changes to GitHub.<br/>
-                for that we have to link our local repository to github repository. 
+                Let's upload these changes to GitHub.<br />
+                for that we have to link our local repository to github repository.
                 <div class="code">
                     git remote add origin URL
                 </div>
@@ -74,16 +78,25 @@
                 </div>
                 <img src="/images/gitpush.png" width="60%" class="center">
             </li>
+            <li>
+                Now our local repository is synchronized with online repository what if we edit files on our online
+                repository and want the changes in our local repository?<br/>
+                <div class="code">
+                    git push -u origin master / branch-name
+                </div>
+                <img src="/images/gitpush.png" width="60%" class="center">
+            </li>
         </ol>
     </div>
 </body>
 <script>
     // copy to clipboard
-    document.querySelectorAll(".code").forEach(e=>{
-        e.addEventListener("click",(e)=>{
+    document.querySelectorAll(".code").forEach(e => {
+        e.addEventListener("click", (e) => {
             copyText = e.target.innerText;
             navigator.clipboard.writeText(copyText);
         });
     })
 </script>
+
 </html>
