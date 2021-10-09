@@ -97,7 +97,7 @@
                 it will fetch all the changed files to your local repository and now your both repositories are synchronized.
                 If files have conflict on same line it may ask you what changes you want in your latest version.
             </li>
-            <h3 class="underlined">Branching</h3>
+            <h2 class="underlined">Branching</h2>
             <li>
                 One of the main use of git is for testing new features without Disrupting the stable version for that we create new branch
                 with the command 
@@ -116,7 +116,12 @@
                 <br/>
                 First switch to main branch by <div class="code">
                     git checkout master
-                </div>
+                </div><br/>
+                Then i will type 
+                <div class="code">
+                    git merge new-feature
+                </div> to merge new-feature into master branch.<br/>
+                Always remeber to checkout into the branch in which you want to merge another branch.
                 <img src="images/gitMerge.jpg" width="60%" class="center">                
             </li>
             <li>
@@ -125,7 +130,22 @@
                 First switch to main branch by <div class="code">
                     git branch -d new-feature
                 </div>
-                <img src="images/deletebranch.png" width="60%" class="center">                
+                <img src="images/deletebranch.png" width="60%" class="center">             
+            </li>
+            <h2 class="underlined">Moving between Commits</h2>
+            <li>
+                To switch to another commit just type this command
+                <div class="code">
+                    git checkout commit-hash
+                </div>
+                <br/>
+                You can get the hash of commit by doing command 
+                <div class="code">
+                    git log
+                </div> or 
+                <div class="code">
+                    git log --oneline
+                </div> for short preview
             </li>
         </ol>
     </div>
