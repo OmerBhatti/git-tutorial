@@ -32,7 +32,7 @@
                 <div class="code">
                     git status
                 </div>. It will tell you about what files are modified, added or deleted.
-                <img src="/images/gitstatus.jpg" width="60%" class="center">
+                <img src="images/gitstatus.jpg" width="60%" class="center">
             </li>
             <li>
                 Now it is time to add the files to staging area (Tracking changes). for that we'll use the command :
@@ -44,7 +44,7 @@
                     git add .
                 </div>
                 for adding all files
-                <img src="/images/gitadd.png" width="60%" class="center">
+                <img src="images/gitadd.png" width="60%" class="center">
             </li>
             <li>
                 Once the files are in staging area you can save them to commit history via command
@@ -58,7 +58,7 @@
                 <div class="code">
                     git log --oneline
                 </div>
-                <img src="/images/gitcommit.png" width="60%" class="center">
+                <img src="images/gitcommit.png" width="60%" class="center">
             </li>
             <li>
                 Now our commit is saved we can add multiple commits in this repository.
@@ -76,15 +76,26 @@
                 <div class="code">
                     git push -u origin master / branch-name
                 </div>
-                <img src="/images/gitpush.png" width="60%" class="center">
+                <img src="images/gitpush.png" width="60%" class="center">
             </li>
             <li>
                 Now our local repository is synchronized with online repository what if we edit files on our online
-                repository and want the changes in our local repository?<br/>
+                repository<br/> and want the changes in our local repository?
+                For that we'll use 
                 <div class="code">
-                    git push -u origin master / branch-name
+                    git pull
+                </div> 
+                command. if we try pushing somethiong without 
+                <div class="code">
+                    git pull
+                </div> it will raise a conflict like this
+                <img src="images/gitpushError.jpg" width="60%" class="center">
+
+                To resolve the issue i will type 
+                <div class="code">
+                    git pull
                 </div>
-                <img src="/images/gitpush.png" width="60%" class="center">
+                it will fetch all the changed files in your local repository and now your bothe repositories are synchronized.
             </li>
         </ol>
     </div>
