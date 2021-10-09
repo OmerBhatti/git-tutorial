@@ -87,14 +87,34 @@
                 command. if we try pushing somethiong without 
                 <div class="code">
                     git pull
-                </div> it will raise a conflict like this
+                </div> it will raise a error like this
                 <img src="images/gitpushError.jpg" width="60%" class="center">
 
-                To resolve the issue i will type 
+                To resolve the issue you have to type 
                 <div class="code">
                     git pull
                 </div>
-                it will fetch all the changed files in your local repository and now your bothe repositories are synchronized.
+                it will fetch all the changed files to your local repository and now your both repositories are synchronized.
+                If files have conflict on same line it may ask you what changes you want in your latest version.
+            </li>
+            <h3 class="underlined">Branching</h3>
+            <li>
+                One of the main use of git is for testing new features without Disrupting the stable version for that we create seperate branch
+                with the command 
+                <div class="code">
+                    git checkout -b new-branch-name
+                </div>
+                this command will create new branch and move the HEAD to this branch.
+                Every branch created is the copy of the branch it was created from.
+            </li>
+            <li>
+                Now i can make any changes and commits in my new branch without disturbing code in master/main branch. When i am done with testing the features
+                i can merge the new-branch with the master/main branch.
+                to merge new branch in your main branch:
+                <br/>
+                First switch to main branch by <div class="code">
+                    git checkout main
+                </div>
             </li>
         </ol>
     </div>
